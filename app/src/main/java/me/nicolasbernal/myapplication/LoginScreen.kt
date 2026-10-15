@@ -171,7 +171,7 @@ fun FacebookLoginScreen(
         Spacer(modifier = Modifier.weight(1f))
 
         Text(
-            text = "Meta © 2024",
+            text = "Meta © 2026",
             fontSize = 11.sp,
             color = FacebookTextGray
         )

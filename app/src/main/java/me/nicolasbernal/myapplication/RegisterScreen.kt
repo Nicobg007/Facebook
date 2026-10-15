@@ -101,7 +101,7 @@ fun FacebookRegisterScreen(
 
             // Encabezado
             Text(
-                text = "Crea una cuenta",
+                text = "Crear una cuenta",
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold
             )
