@@ -2,11 +2,12 @@ package me.nicolasbernal.myapplication
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import me.nicolasbernal.myapplication.ui.theme.FacebookTheme
 
@@ -16,7 +17,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FacebookTheme {
-                var showRegister by remember { mutableStateOf(false) }
+                var showRegister by rememberSaveable { mutableStateOf(false) }
+
+
+                BackHandler(enabled = showRegister) {
+                    showRegister = false
+                }
 
                 if (showRegister) {
                     FacebookRegisterScreen(

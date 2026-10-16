@@ -63,7 +63,7 @@ fun FacebookLoginScreen(
     ) {
         Spacer(modifier = Modifier.height(56.dp))
 
-        // Logo
+
         Text(
             text = "facebook",
             fontSize = 48.sp,
@@ -73,7 +73,7 @@ fun FacebookLoginScreen(
 
         Spacer(modifier = Modifier.height(32.dp))
 
-        // Correo o teléfono
+
         FacebookTextField(
             value = email,
             onValueChange = { email = it },
@@ -84,7 +84,7 @@ fun FacebookLoginScreen(
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        // Contraseña
+
         FacebookTextField(
             value = password,
             onValueChange = { password = it },
@@ -98,7 +98,7 @@ fun FacebookLoginScreen(
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        // Botón iniciar sesión
+
         Button(
             onClick = { onLoginClick(email, password) },
             modifier = Modifier
@@ -126,7 +126,7 @@ fun FacebookLoginScreen(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Separador "o"
+
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
@@ -150,7 +150,7 @@ fun FacebookLoginScreen(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Botón crear cuenta nueva
+
         Button(
             onClick = onCreateAccountClick,
             modifier = Modifier
@@ -167,7 +167,7 @@ fun FacebookLoginScreen(
             )
         }
 
-        // Empuja el pie de página hacia abajo
+
         Spacer(modifier = Modifier.weight(1f))
 
         Text(

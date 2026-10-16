@@ -99,7 +99,7 @@ fun FacebookRegisterScreen(
         ) {
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Encabezado
+
             Text(
                 text = "Crear una cuenta",
                 fontSize = 24.sp,
@@ -113,7 +113,7 @@ fun FacebookRegisterScreen(
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // Nombre y apellido
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -134,7 +134,7 @@ fun FacebookRegisterScreen(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Celular o correo
+
             RegisterTextField(
                 value = contact,
                 onValueChange = { contact = it },
@@ -144,7 +144,7 @@ fun FacebookRegisterScreen(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Contraseña
+
             RegisterTextField(
                 value = password,
                 onValueChange = { password = it },
@@ -155,7 +155,7 @@ fun FacebookRegisterScreen(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Fecha de nacimiento
+
             Text(
                 text = "Fecha de nacimiento",
                 fontSize = 12.sp,
@@ -173,7 +173,7 @@ fun FacebookRegisterScreen(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Género
+
             Text(
                 text = "Género",
                 fontSize = 12.sp,
@@ -205,7 +205,7 @@ fun FacebookRegisterScreen(
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // Botón registrarse
+
             Button(
                 onClick = {
                     onRegisterClick(
